@@ -2,7 +2,7 @@ name: Code Review Reminder
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Set the schedule based on your preference, e.g., every day at midnight
+     - cron: '3 5 * * *'  # Schedule at 5:03 every day
 
 jobs:
   code_review_reminder:
