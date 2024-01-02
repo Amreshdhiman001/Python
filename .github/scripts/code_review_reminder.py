@@ -16,7 +16,7 @@ def get_pending_reviews(repo, days_threshold=2):
 
 def send_reminder(pending_reviews, repo, token):
     for pr in pending_reviews:
-        reminder_comment = f"👋 Hey @{pr.user.login}! It's been a while since your pull request #{pr.number} was updated. Could you please review it?"
+        reminder_comment = f"👋 Hey @{pr.user.login}! It's been ted. Could you please review it?"
         pr.create_issue_comment(reminder_comment)
 
 def main(token):
